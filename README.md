@@ -3,5 +3,5 @@
 ## Hello App
 
 ```bash
-rails new hello_app --skip-bundle
+rails _7.0.4_ new hello_app --skip-bundle
 ```
