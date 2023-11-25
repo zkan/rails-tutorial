@@ -17,3 +17,13 @@ rails _7.0.4_ new toy_app --skip-bundle
 ```bash
 rails _7.0.4_ new sample_app --skip-bundle
 ```
+
+## Simple Hotwire
+
+Ref: [Learn Hotwire by building the simplest possible Hotwire and Ruby on Rails
+app - a beginners
+guide.](https://railsnotes.xyz/blog/the-simplest-ruby-on-rails-and-hotwire-app-possible-beginners-guide)
+
+```bash
+rails new simple_hotwire --css tailwind
+```
