@@ -1,24 +1,30 @@
-# README
+# To-do App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Play with Rails migration..
 
-Things you may want to cover:
+## Commands
 
-* Ruby version
+Adding users
 
-* System dependencies
+```bash
+./bin/rails generate migration AddUserToTodos user:string
+```
 
-* Configuration
+Rails will generate a migration for us.
 
-* Database creation
+When you passed AddUserToTodos user:string to Rails, it recognized the
+migration name, AddUserToToDos, as a request to add a column. If you name your
+migration name "AddXXXToYYY" or "RemoveXXXFromYYY" and pass a list of column
+names and types, Rails will figure out what you're trying to do.
 
-* Database initialization
+To migrate:
 
-* How to run the test suite
+```bash
+./bin/rails db:migrate
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+To rollback:
 
-* Deployment instructions
-
-* ...
+```bash
+./bin/rails db:rollback
+```
