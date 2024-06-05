@@ -1,24 +1,5 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Play around with Rails Migration.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Credit: [ลองพยายามอธิบาย Active Record และ Active Record Migration](https://wittawasw.com/2024/06/02/activerecord-and-activerecord-migration.html)
