@@ -1,14 +1,12 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Quotes</h1>
+<main class="container">
+  <div class="header">
+    <h1>Quotes</h1>
+    <%= turbo_frame_tag "first_turbo_frame" do %>
+      <%= link_to "New quote", new_quote_path, class: "btn btn--primary" %>
+    <% end %>
+  </div>
 
-<div id="quotes">
-  <% @quotes.each do |quote| %>
-    <%= render quote %>
-    <p>
-      <%= link_to "Show this quote", quote %>
-    </p>
-  <% end %>
-</div>
-
-<%= link_to "New quote", new_quote_path %>
+  <%= render @quotes %>
+</main>
