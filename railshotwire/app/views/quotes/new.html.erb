@@ -2,10 +2,5 @@
 
 <%= turbo_frame_tag "first_turbo_frame" do %>
   <%= render "form", quote: @quote %>
-<% end %>
-
-<br>
-
-<div>
   <%= link_to "Back to quotes", quotes_path %>
-</div>
+<% end %>
