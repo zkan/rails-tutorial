@@ -1,0 +1,9 @@
+<turbo-stream action="replace" target="new_quote">
+  <template>
+    <%= turbo_frame_tag "new_quote" do %>
+      <%= link_to "New quote", new_quote_path, class: "btn btn--primary" %>
+    <% end %>
+  </template>
+</turbo-stream>
+
+<%= turbo_stream.prepend "quotes", @quote %>
