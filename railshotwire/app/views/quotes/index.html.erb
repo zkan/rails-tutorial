@@ -8,6 +8,8 @@
     <% end %>
   </div>
 
+  <%= turbo_stream_from "broadcast_quotes" %>
+
   <div id="quotes">
     <%= render @quotes %>
   </div>
