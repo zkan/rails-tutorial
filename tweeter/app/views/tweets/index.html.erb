@@ -1,2 +1,23 @@
-<h1>Tweets#index</h1>
-<p>Find me in app/views/tweets/index.html.erb</p>
+<%= link_to root_path do %>Home<% end %>
+
+<h1>Tweets</h1>
+
+<%= form_with model: @tweet do |form| %>
+  <% if form.object.errors.any? %>
+    <div>
+      <h2><%= pluralize(form.object.errors.count, "error") %> prohibited this Tweet from being saved:</h2>
+
+      <ul>
+        <% form.object.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= form.text_area :body, placeholder: "What's on your mind?" %>
+
+  <div>
+    <%= form.submit "Tweet" %>
+  </div>
+<% end %>
