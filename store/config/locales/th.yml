@@ -1,0 +1,6 @@
+th:
+  hello: "สวัสดีครับ"
+  products:
+    index:
+      title: "ผลิตภัณฑ์"
+
