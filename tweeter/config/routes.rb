@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   # get 'tweets/index'
   # post 'tweets/index', as: :tweets
-  resources :tweets, only: [:index, :create]
+  resources :tweets, only: [:index, :create, :edit, :update]
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

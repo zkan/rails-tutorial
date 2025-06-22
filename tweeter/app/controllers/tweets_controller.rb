@@ -23,6 +23,24 @@ class TweetsController < ApplicationController
     end
   end
 
+  def edit
+    @tweet = Tweet.find(params[:id])
+  end
+
+  def update
+    @tweet = Tweet.find(params[:id])
+    respond_to do |format|
+      if @tweet.update(tweet_params)
+        puts "should redirect"
+        format.turbo_stream
+        format.html { redirect_to root_path, notice: "Tweet was successfully updated." }
+        puts "redirected"
+      else
+        format.html {redirect_to root_path }
+      end
+    end
+  end
+
   private
 
   def tweet_params
