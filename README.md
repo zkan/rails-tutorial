@@ -28,7 +28,7 @@ guide.](https://railsnotes.xyz/blog/the-simplest-ruby-on-rails-and-hotwire-app-p
 rails new simple_hotwire --css tailwind
 ```
 
-## myapp
+## doable
 
 Credit: [Rails New, a beginner's Ruby on Rails tutorial with
 Typecraft](https://www.youtube.com/playlist?list=PLHFP2OPUpCeZcPutT9yn4-e0bMmrn5Gd1)
